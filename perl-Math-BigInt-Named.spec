@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Math
-%define	pnam	BigInt-Named
+%define		pdir	Math
+%define		pnam	BigInt-Named
 Summary:	Math::BigInt::Named - BigInts that know their name in some languages
 Summary(pl):	Math::BigInt::Named - BigInty znaj±ce swoje nazwy w niektórych jêzykach
 Name:		perl-Math-BigInt-Named
