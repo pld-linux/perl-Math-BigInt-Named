@@ -6,7 +6,7 @@
 %define		pdir	Math
 %define		pnam	BigInt-Named
 Summary:	Math::BigInt::Named - BigInts that know their name in some languages
-Summary(pl):	Math::BigInt::Named - BigInty znaj±ce swoje nazwy w niektórych jêzykach
+Summary(pl.UTF-8):   Math::BigInt::Named - BigInty znajÄ…ce swoje nazwy w niektÃ³rych jÄ™zykach
 Name:		perl-Math-BigInt-Named
 Version:	0.02
 Release:	1
@@ -26,9 +26,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This is a subclass of Math::BigInt and adds support for named numbers
 in English and German.
 
-%description -l pl
-To jest podklasa Math::BigInt dodaj±ca obs³ugê s³ownej reprezentacji
-liczb w jêzyku angielskim i niemieckim.
+%description -l pl.UTF-8
+To jest podklasa Math::BigInt dodajÄ…ca obsÅ‚ugÄ™ sÅ‚ownej reprezentacji
+liczb w jÄ™zyku angielskim i niemieckim.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
