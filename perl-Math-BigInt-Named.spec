@@ -9,7 +9,7 @@ Summary:	Math::BigInt::Named - BigInts that know their name in some languages
 Summary(pl.UTF-8):	Math::BigInt::Named - BigInty znające swoje nazwy w niektórych językach
 Name:		perl-Math-BigInt-Named
 Version:	0.02
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
