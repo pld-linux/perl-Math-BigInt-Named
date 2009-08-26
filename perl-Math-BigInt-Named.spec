@@ -8,13 +8,13 @@
 Summary:	Math::BigInt::Named - BigInts that know their name in some languages
 Summary(pl.UTF-8):	Math::BigInt::Named - BigInty znające swoje nazwy w niektórych językach
 Name:		perl-Math-BigInt-Named
-Version:	0.02
-Release:	2
+Version:	0.03
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	21c3540331afacd165ff668e4e5e1da2
+# Source0-md5:	ed4ae17fb2dabfabbe408f24130e483e
 BuildRequires:	perl-Math-BigInt >= 1.48
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -54,7 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc CHANGES CREDITS LICENSE NEW README TODO
+%doc CHANGES CREDITS LICENSE README TODO
 %{perl_vendorlib}/Math/BigInt/Named.pm
 %{perl_vendorlib}/Math/BigInt/Named
 %{_mandir}/man3/*
