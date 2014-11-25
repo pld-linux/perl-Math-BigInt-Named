@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Math
 %define		pnam	BigInt-Named
+%include	/usr/lib/rpm/macros.perl
 Summary:	Math::BigInt::Named - BigInts that know their name in some languages
 Summary(pl.UTF-8):	Math::BigInt::Named - BigInty znające swoje nazwy w niektórych językach
 Name:		perl-Math-BigInt-Named
@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	ed4ae17fb2dabfabbe408f24130e483e
+URL:		http://search.cpan.org/dist/Math-BigInt-Named/
 BuildRequires:	perl-Math-BigInt >= 1.48
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -47,7 +48,7 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -p examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
