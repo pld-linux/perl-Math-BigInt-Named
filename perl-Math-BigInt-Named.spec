@@ -4,7 +4,6 @@
 
 %define		pdir	Math
 %define		pnam	BigInt-Named
-%include	/usr/lib/rpm/macros.perl
 Summary:	Math::BigInt::Named - BigInts that know their name in some languages
 Summary(pl.UTF-8):	Math::BigInt::Named - BigInty znające swoje nazwy w niektórych językach
 Name:		perl-Math-BigInt-Named
